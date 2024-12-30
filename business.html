@@ -68,21 +68,40 @@
       .sdg-target li {
         margin: 5px 0;
       }
+       nav {
+            background-color: #006d77; /* Elegant teal color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .nav-button {
+            color: #ffffff; /* White text for contrast */
+            background-color: #83c5be; /* Soft mint green for buttons */
+            border: none;
+            padding: 12px 25px;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+        }
+        .nav-button:hover {
+            background-color: #edf6f9; /* Lighter mint green on hover */
+            color: #006d77; /* Teal text for hover */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
     </style>
   </head>
   <body>
-<section>
-  <a href="https://github.com/JayateerthaH/mysolutions/blob/main/Airmonitoing.html">
-    Air quality monitoring
-  </a>
-  <a href="https://github.com/JayateerthaH/mysolutions/blob/main/smartenergy.html">
-    Smart Energy Management
-  </a>
-  <a href="https://github.com/JayateerthaH/mysolutions/blob/main/Controltraffic.html">
-    Controlled Traffic Systems
-  </a>
-</section>
 
+    <nav>
+        <a href="page1.html" class="nav-button">Air Quality Monitoring</a>
+        <a href="page2.html" class="nav-button">Smart Energy Management</a>
+        <a href="page3.html" class="nav-button">Controlled Traffic System</a>
+    </nav>
 
     <h1 style="display: flex; justify-content: center;">Mapping Business Cases to SDG Targets and Indicators</h1>
     <div class="sdg-target">
@@ -133,6 +152,47 @@
           <strong>Indicator 11.2.1:</strong>Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.
         </li>
       </ul>
+
+      <section id="dijkstra">
+        <h2>Dijkstra's Algorithm</h2>
+        <p><strong>Application:</strong> Used for improving traffic flow in Connected Public Transport and Transport Management, which directly helps reduce emissions.</p>
+        <p><strong>Time Complexity:</strong> O(E log V)</p>
+        <p><strong>Space Complexity:</strong> O(V)</p>
+        <p><a href="https://github.com/JayateerthaH/business/blob/main/dijkstras.cpp">See the code</a></p>
+    </section>
+
+    <section id="kruskal">
+        <h2>Kruskal's Algorithm</h2>
+        <p><strong>Application:</strong> Used in Water Management for optimizing resource distribution, contributing to more sustainable city infrastructure.</p>
+        <p><strong>Time Complexity:</strong> O(E log E)</p>
+        <p><strong>Space Complexity:</strong> O(V)</p>
+        <p><a href="https://github.com/JayateerthaH/business/blob/main/kruskal.cpp">See the code</a></p>
+    </section>
+
+    <section id="merge-sort">
+        <h2>Merge Sort</h2>
+        <p><strong>Application:</strong> Efficiently sorts large datasets in various domains, including task prioritization and resource management.</p>
+        <p><strong>Time Complexity:</strong> O(n log n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><a href="https://github.com/JayateerthaH/business/blob/main/mergesort.cpp">See the code</a></p>
+    </section>
+
+    <section id="bfs">
+        <h2>Breadth-First Search (BFS)</h2>
+        <p><strong>Application:</strong> Used for Smart Energy Management and Connected Public Transport, ensuring efficient routing and energy distribution.</p>
+        <p><strong>Time Complexity:</strong> O(V + E)</p>
+        <p><strong>Space Complexity:</strong> O(V)</p>
+        <p><a href="https://github.com/JayateerthaH/business/blob/main/bfs.cpp">See the code</a></p>
+    </section>
+
+    <section id="dfs">
+        <h2>Depth-First Search (DFS)</h2>
+        <p><strong>Application:</strong> Ideal for tasks such as exploring networks, scheduling problems, and pathfinding in mazes or graphs.</p>
+        <p><strong>Time Complexity:</strong> O(V + E)</p>
+        <p><strong>Space Complexity:</strong> O(V)</p>
+        <p><a href="https://github.com/JayateerthaH/business/blob/main/dfs.cpp">See the code</a></p>
+    </section>
+
     </div>
   </body>
 </html>
